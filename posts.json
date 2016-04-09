@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "My First Blog Post",
+      "content": "You should read my blog everyday"
+    },
+    {
+      "id": 2,
+      "title": "My Second Blog Post",
+      "content": "Welcome back"
+    },
+    {
+      "id": 3,
+      "title": "Stay in the zone",
+      "content": "Zone.js"
+    }
+  ]
+}
