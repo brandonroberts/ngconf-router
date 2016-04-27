@@ -2,7 +2,7 @@ import {Component} from 'angular2/core';
 
 @Component({
   selector: 'home',
-  directives: [ ]
+  directives: [ ],
   template: `
     Welcome to My Blog!
   `

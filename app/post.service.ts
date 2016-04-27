@@ -8,7 +8,7 @@ export class PostService {
 
   getPost(id: number) {
     return this.getPosts()
-      .map(posts => posts.find(post => post.id === id)));
+      .map(posts => posts.find(post => post.id === id));
   }
 
   getPosts() {

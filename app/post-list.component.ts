@@ -1,14 +1,11 @@
 import {Component, OnInit} from 'angular2/core';
 import {PostService} from './post.service';
+import {BlogPost} from './post.component';
 
 @Component({
-  selector: 'blog-posts',
+  selector: 'posts-list',
   directives: [ ],
   template: `
-    <div class="page-header">
-      <h2>Blog Posts</h2>
-    </div>
-
     <ul class="list-group">
       <li class="list-group-item" *ngFor="var post of (posts | async)">
         <a>{{ post.title }}</a>
@@ -16,9 +13,9 @@ import {PostService} from './post.service';
     </ul>
   `
 })
-export class BlogPosts implements OnInit {
+export class PostList implements OnInit {
   posts: any;
-  
+
   constructor(public ps: PostService) {}
 
   ngOnInit() {

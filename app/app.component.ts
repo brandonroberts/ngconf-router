@@ -3,12 +3,11 @@ import {Component} from 'angular2/core';
 
 import {Home} from './home.component';
 import {BlogPosts} from './posts.component';
-import {BlogPost} from './post.component';
 import {Login} from './login.component';
 import {Admin} from './admin.component';
 
 @Component({
-  selector: 'app',
+  selector: 'my-app',
   directives: [  ],
   template: `
     <nav class="navbar navbar-default navbar-fixed-top">
