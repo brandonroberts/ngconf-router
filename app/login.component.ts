@@ -1,5 +1,5 @@
-import {Component} from 'angular2/core';
-import {Auth} from './auth.service';
+import {Component} from '@angular/core';
+import {AuthService} from './auth.service';
 
 
 @Component({
@@ -28,8 +28,8 @@ import {Auth} from './auth.service';
     </div>
   `
 })
-export class Login {
-  constructor(public auth: Auth) {}
+export class LoginComponent {
+  constructor(public auth: AuthService) {}
 
   login() {
     this.auth.login();

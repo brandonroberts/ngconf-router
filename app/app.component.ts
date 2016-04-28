@@ -1,14 +1,19 @@
-import {Component} from 'angular2/core';
+import {Component} from '@angular/core';
+import {HTTP_PROVIDERS} from '@angular/http';
+import {PostService} from './post.service';
+import {AuthService} from './auth.service';
 
-
-import {Home} from './home.component';
-import {BlogPosts} from './posts.component';
-import {Login} from './login.component';
-import {Admin} from './admin.component';
+import {HomeComponent} from './home.component';
+import {BlogPostsComponent} from './blog-posts.component';
 
 @Component({
   selector: 'my-app',
-  directives: [  ],
+  providers: [
+    AuthService,
+    PostService,
+    HTTP_PROVIDERS
+  ],
+  directives: [],
   template: `
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -19,12 +24,6 @@ import {Admin} from './admin.component';
           <li>
             <a>Posts</a>
           </li>
-          <li>
-            <a>Admin</a>
-          </li>
-          <li>
-            <a>Login</a>
-          </li>
         </ul>
       </div>
     </nav>
@@ -34,4 +33,4 @@ import {Admin} from './admin.component';
     </div>
   `
 })
-export class App{}
+export class AppComponent{}

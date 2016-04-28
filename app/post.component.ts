@@ -1,11 +1,10 @@
-import {Component, OnInit} from 'angular2/core';
+import {Component, OnInit} from '@angular/core';
 import {PostService} from './post.service';
 import {PostInfoComponent} from './post-info.component';
 
-
 @Component({
   selector: 'blog-post',
-  directives: [ PostInfoComponent ],
+  directives: [PostInfoComponent],
   template: `
     <post-info [post]="post" *ngIf="post"></post-info>
 
@@ -18,13 +17,12 @@ import {PostInfoComponent} from './post-info.component';
     <button (click)="goToPosts()">Back to Posts</button>
   `,
 })
-export class BlogPost implements OnInit {
+export class BlogPostComponent {
   post: any;
 
   constructor(public ps: PostService) {}
 
-  ngOnInit() {
-    let id =+ 0;
+  getPost(id: number) {
     this.ps.getPost(id)
       .subscribe((post) => {
         this.post = post;

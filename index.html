@@ -2,25 +2,32 @@
   <head>
     <title>ng-conf Router Workshop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <!-- 1. Load libraries -->
-    <!-- IE required polyfills, in this exact order -->
-    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
-    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
 
-    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
-    <script src="node_modules/rxjs/bundles/Rx.js"></script>
-    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
-    <script src="node_modules/angular2/bundles/http.dev.js"></script>
-    <!-- 2. Configure SystemJS -->
     <script>
       System.config({
         packages: {
           app: {
             format: 'register',
             defaultExtension: 'js'
-          }
+          },
+
+          '@angular/common':                   { main: 'index.js', defaultExtension: 'js' },
+          '@angular/compiler':                 { main: 'index.js', defaultExtension: 'js' },
+          '@angular/core':                     { main: 'index.js', defaultExtension: 'js' },
+          '@angular/http':                     { main: 'index.js', defaultExtension: 'js' },
+          '@angular/platform-browser':         { main: 'index.js', defaultExtension: 'js' },
+          '@angular/platform-browser-dynamic': { main: 'index.js', defaultExtension: 'js' },
+          '@angular/router':                   { main: 'index.js', defaultExtension: 'js' },
+          'rxjs':                              { defaultExtension: 'js' }
+        },
+        map: {
+          '@angular': 'node_modules/@angular',
+          'rxjs': 'node_modules/rxjs'
         }
       });
       System.import('app/main')
@@ -32,7 +39,6 @@
       }
     </style>
   </head>
-  <!-- 3. Display the application -->
   <body>
     <div class="container">
       <my-app>Loading...</my-app>

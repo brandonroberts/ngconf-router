@@ -1,10 +1,10 @@
-import {Component} from 'angular2/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'home',
-  directives: [ ],
+  directives: [],
   template: `
     Welcome to My Blog!
   `
 })
-export class Home {}
+export class HomeComponent {}

@@ -1,19 +1,18 @@
-import {Component, OnInit} from 'angular2/core';
+import {Component, OnInit} from '@angular/core';
 import {PostService} from './post.service';
-import {BlogPost} from './post.component';
 
 @Component({
   selector: 'posts-list',
-  directives: [ ],
+  directives: [],
   template: `
     <ul class="list-group">
-      <li class="list-group-item" *ngFor="var post of (posts | async)">
+      <li class="list-group-item" *ngFor="let post of (posts | async)">
         <a>{{ post.title }}</a>
       </li>
     </ul>
   `
 })
-export class PostList implements OnInit {
+export class PostListComponent implements OnInit {
   posts: any;
 
   constructor(public ps: PostService) {}

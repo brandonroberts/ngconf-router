@@ -1,8 +1,8 @@
-import {Injectable} from 'angular2/core';
+import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs/Observable';
 
 @Injectable()
-export class Auth {
+export class AuthService {
   loggedIn: boolean = false;
 
   login() {

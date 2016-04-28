@@ -1,15 +1,17 @@
-import {Component} from 'angular2/core';
-import {AdminHome} from './admin-home.component';
-
+import {Component} from '@angular/core';
+import {AdminHomeComponent} from './admin-home.component';
+import {AuthService} from './auth.service';
 
 
 @Component({
   selector: 'blog-admin',
-  directives: [  ],
+  directives: [],
   template: `
     <div class="page-header">
       <h2>Admin Panel</h2>
     </div>
   `
 })
-export class Admin {}
+export class AdminComponent {
+  constructor(public auth: AuthService) {}
+}
