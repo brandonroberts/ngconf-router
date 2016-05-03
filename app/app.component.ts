@@ -1,7 +1,6 @@
 import {Component} from '@angular/core';
 import {HTTP_PROVIDERS} from '@angular/http';
 import {PostService} from './post.service';
-import {AuthService} from './auth.service';
 
 import {HomeComponent} from './home.component';
 import {BlogPostsComponent} from './blog-posts.component';
@@ -9,7 +8,6 @@ import {BlogPostsComponent} from './blog-posts.component';
 @Component({
   selector: 'my-app',
   providers: [
-    AuthService,
     PostService,
     HTTP_PROVIDERS
   ],
@@ -29,8 +27,8 @@ import {BlogPostsComponent} from './blog-posts.component';
     </nav>
 
     <div class="page-header">
-      <h2>My Blog</h2>
+      <h2>ngBlog</h2>
     </div>
   `
 })
-export class AppComponent{}
+export class AppComponent {}

@@ -1,5 +1,4 @@
-import {Component, OnInit} from '@angular/core';
-import {PostService} from './post.service';
+import {Component} from '@angular/core';
 import {PostListComponent} from './post-list.component';
 import {BlogPostComponent} from './post.component';
 

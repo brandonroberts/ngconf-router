@@ -2,28 +2,28 @@
   "posts": [
     {
       "id": 1,
-      "title": "My First Blog Post",
-      "content": "Sunt in tempor quis dolore nostrud. Aliquip non et duis cillum magna magna culpa id mollit sint voluptate amet. Sint quis minim excepteur amet velit sint non cupidatat deserunt mollit voluptate. Reprehenderit velit id mollit et consequat elit occaecat irure ex excepteur. Dolore fugiat aliquip ex nulla cillum sint id velit. Cupidatat nulla Lorem aute anim dolor. Veniam in commodo sit nisi minim aliqua nisi cupidatat velit qui adipisicing. Irure est velit sint Lorem do amet sunt anim sint sit. Amet laboris reprehenderit labore dolore nulla aute eu aute dolor. Officia cillum nostrud cillum occaecat aute veniam eiusmod occaecat dolore commodo id occaecat."
+      "title": "Welcome",
+      "content": "Hello Angular 2 developer. Come take on a brave new world with me."
     },
     {
       "id": 2,
-      "title": "My Second Blog Post",
-      "content": "Cillum sunt nisi cillum aliquip adipisicing irure dolor nulla et et nulla. Ad velit do nostrud nulla cillum do. Occaecat ut minim minim in nulla deserunt laboris dolor tempor sint aliquip. Nostrud voluptate cupidatat non do eiusmod ullamco fugiat anim nulla. Occaecat sit adipisicing laboris pariatur proident ea ea voluptate magna. Reprehenderit exercitation esse sit voluptate minim mollit officia. Cupidatat mollit minim ut officia adipisicing. Ipsum Lorem dolor amet nulla dolor amet mollit ad culpa. Do veniam dolor proident nisi dolor non non velit aute. Lorem tempor id est eu Lorem et elit laboris eu cillum."
+      "title": "Developer Guides",
+      "content": "Welcome back! Read through the developer guides and cookbooks for more information on particular topics."
     },
     {
       "id": 3,
-      "title": "Stay In The Zone",
-      "content": "Qui duis fugiat quis eiusmod voluptate reprehenderit deserunt nulla ut veniam laborum culpa. Sunt occaecat tempor esse consequat ex ex exercitation eu reprehenderit nisi ullamco. Velit minim quis excepteur tempor cupidatat labore voluptate consequat velit id nisi. Lorem dolore irure ex mollit magna minim aliquip irure anim. Quis exercitation excepteur ea cupidatat ea laboris commodo occaecat sint excepteur commodo irure et. Eu dolor consectetur ad pariatur dolore adipisicing. Proident exercitation deserunt nulla ullamco nulla in tempor aliquip excepteur laborum reprehenderit tempor. Officia Lorem adipisicing dolore proident mollit non eu fugiat deserunt quis consequat est pariatur deserunt. Sunt aute sunt officia veniam ex irure Lorem in irure excepteur. Velit aute commodo sunt adipisicing ad sit cupidatat occaecat laborum laboris non eiusmod id aute."
+      "title": "Stay In The Zone.js",
+      "content": "A polyfill for the Zone specification currently before the TC39 committee that determines standards for the JavaScript language."
     },
     {
       "id": 4,
       "title": "Forms, forms and forms",
-      "content": "Voluptate exercitation ad sit cillum cillum ullamco officia. Laborum duis in reprehenderit do labore qui sint sint. Qui ex officia aliquip est tempor in deserunt ea ad aute nisi eu. Laboris consectetur excepteur eiusmod pariatur in. Eu Lorem enim exercitation magna occaecat eu culpa. Magna non nulla esse ullamco elit fugiat duis minim consectetur nisi enim veniam adipisicing cupidatat. Amet irure ea dolore sunt non labore mollit irure laborum. Non aliqua fugiat fugiat deserunt aliquip esse proident. Magna aute laboris est quis veniam et nisi eiusmod sit irure nisi excepteur non. Excepteur sunt sit ut minim."
+      "content": "A form creates a cohesive, effective, and compelling data entry experience. An Angular form coordinates a set of data-bound user controls, tracks changes, validates input, and presents errors."
     },
     {
       "id": 5,
       "title": "Component Styles",
-      "content": "Tempor Lorem ullamco adipisicing sint exercitation consectetur incididunt sunt duis ullamco. Nisi enim ad qui dolore qui aliquip commodo dolor laborum officia exercitation cupidatat. Cupidatat esse duis ullamco magna irure in culpa elit enim aliquip excepteur magna. Culpa in elit veniam ea eiusmod laboris minim tempor qui nisi. Est velit voluptate ea ullamco consequat labore minim. Enim enim ex in laboris. Mollit ea id cupidatat excepteur esse magna proident officia sit do nulla. Minim occaecat reprehenderit qui anim magna laboris incididunt ut. Reprehenderit qui mollit consequat laboris sit et ad non. Nulla ex elit magna exercitation voluptate veniam deserunt velit aliqua."
+      "content": "Angular 2 applications are styled with regular CSS. That means we can apply everything we know about CSS stylesheets, selectors, rules, and media queries to our Angular applications directly."
     }
   ]
 }
