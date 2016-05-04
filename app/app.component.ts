@@ -18,10 +18,10 @@ import {Router, Routes, ROUTER_DIRECTIVES} from '@angular/router';
       <div class="container">
         <ul class="nav navbar-nav">
           <li>
-            <a>Home</a>
+            <a [routerLink]="['/']">Home</a>
           </li>
           <li>
-            <a>Posts</a>
+            <a [routerLink]="['/blog']">Posts</a>
           </li>
         </ul>
       </div>

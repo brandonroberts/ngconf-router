@@ -1,13 +1,14 @@
 import {Component, OnInit} from '@angular/core';
 import {PostService} from './post.service';
+import {ROUTER_DIRECTIVES} from '@angular/router';
 
 @Component({
   selector: 'posts-list',
-  directives: [],
+  directives: [ROUTER_DIRECTIVES],
   template: `
     <ul class="list-group">
       <li class="list-group-item" *ngFor="let post of (posts | async)">
-        <a>{{ post.title }}</a>
+        <a [routerLink]="['./posts', post.id]">{{ post.title }}</a>
       </li>
     </ul>
   `

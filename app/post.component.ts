@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {PostService} from './post.service';
 import {PostInfoComponent} from './post-info.component';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'blog-post',
@@ -20,7 +21,7 @@ import {PostInfoComponent} from './post-info.component';
 export class BlogPostComponent {
   post: any;
 
-  constructor(public ps: PostService) {}
+  constructor(public ps: PostService, public router: Router) {}
 
   getPost(id: number) {
     this.ps.getPost(id)
@@ -30,6 +31,6 @@ export class BlogPostComponent {
   }
 
   goToPosts() {
-
+    this.router.navigate(['/blog']);
   }
 }
