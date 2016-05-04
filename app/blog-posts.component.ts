@@ -24,4 +24,4 @@ import {Routes, ROUTER_DIRECTIVES} from '@angular/router';
     component: BlogPostComponent
   }
 ])
-export class BlogPostsComponent {}
+export default class BlogPostsComponent {}

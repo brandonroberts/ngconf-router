@@ -3,7 +3,7 @@ import {HTTP_PROVIDERS} from '@angular/http';
 import {PostService} from './post.service';
 
 import {HomeComponent} from './home.component';
-import {BlogPostsComponent} from './blog-posts.component';
+// import {BlogPostsComponent} from './blog-posts.component';
 import {Router, Routes, ROUTER_DIRECTIVES} from '@angular/router';
 
 @Component({
@@ -36,7 +36,7 @@ import {Router, Routes, ROUTER_DIRECTIVES} from '@angular/router';
 })
 @Routes([
   { path: '/', component: HomeComponent },
-  { path: '/blog', component: BlogPostsComponent }
+  { path: '/blog', component: 'app/blog-posts.component' }
 ])
 export class AppComponent {
   constructor(router: Router) {}
