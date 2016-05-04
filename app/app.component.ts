@@ -35,7 +35,8 @@ import {Router, Routes, ROUTER_DIRECTIVES} from '@angular/router';
   `
 })
 @Routes([
-  { path: '/', component: HomeComponent }
+  { path: '/', component: HomeComponent },
+  { path: '/blog', component: BlogPostsComponent }
 ])
 export class AppComponent {
   constructor(router: Router) {}
