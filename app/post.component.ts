@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {PostService} from './post.service';
 import {PostInfoComponent} from './post-info.component';
-import {Router, OnActivate, RouteSegment, RouteTree} from '@angular/router';
+import {Router, OnActivate, RouteSegment, RouteTree, CanDeactivate} from '@angular/router';
 
 @Component({
   selector: 'blog-post',
@@ -18,7 +18,7 @@ import {Router, OnActivate, RouteSegment, RouteTree} from '@angular/router';
     <button (click)="goToPosts()">Back to Posts</button>
   `,
 })
-export class BlogPostComponent implements OnActivate {
+export class BlogPostComponent implements OnActivate, CanDeactivate {
   post: any;
 
   constructor(public ps: PostService, public router: Router) {}
@@ -42,5 +42,9 @@ export class BlogPostComponent implements OnActivate {
 
   goToPosts() {
     this.router.navigate(['/blog']);
+  }
+
+  routerCanDeactivate(curr: RouteTree, prev: RouteTree) {
+    return Promise.resolve(window.confirm('Are you sure?'));
   }
 }
