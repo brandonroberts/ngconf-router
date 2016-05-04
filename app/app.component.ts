@@ -4,6 +4,7 @@ import {PostService} from './post.service';
 
 import {HomeComponent} from './home.component';
 import {BlogPostsComponent} from './blog-posts.component';
+import {Router, Routes, ROUTER_DIRECTIVES} from '@angular/router';
 
 @Component({
   selector: 'my-app',
@@ -11,7 +12,7 @@ import {BlogPostsComponent} from './blog-posts.component';
     PostService,
     HTTP_PROVIDERS
   ],
-  directives: [],
+  directives: [ROUTER_DIRECTIVES],
   template: `
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -29,6 +30,13 @@ import {BlogPostsComponent} from './blog-posts.component';
     <div class="page-header">
       <h2>ngBlog</h2>
     </div>
+
+    <router-outlet></router-outlet>
   `
 })
-export class AppComponent {}
+@Routes([
+  { path: '/', component: HomeComponent }
+])
+export class AppComponent {
+  constructor(router: Router) {}
+}
