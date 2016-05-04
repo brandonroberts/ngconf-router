@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {PostService} from './post.service';
 import {PostInfoComponent} from './post-info.component';
-import {Router} from '@angular/router';
+import {Router, OnActivate, RouteSegment, RouteTree} from '@angular/router';
 
 @Component({
   selector: 'blog-post',
@@ -18,10 +18,20 @@ import {Router} from '@angular/router';
     <button (click)="goToPosts()">Back to Posts</button>
   `,
 })
-export class BlogPostComponent {
+export class BlogPostComponent implements OnActivate {
   post: any;
 
   constructor(public ps: PostService, public router: Router) {}
+
+  routerOnActivate(
+    curr: RouteSegment,
+    prev?: RouteSegment,
+    currTree?: RouteTree,
+    prevTree?: RouteTree
+  ) {
+    let id = + curr.getParam('id');
+    this.getPost(id);
+  }
 
   getPost(id: number) {
     this.ps.getPost(id)
